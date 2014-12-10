@@ -2,24 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="332b5f76-2119-4e38-ba49-ea1d469ac80b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/bahan/bahan.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/bahan/bahan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/navbar/navbar.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/partner/partner.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/partnerController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stock/stock.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stock/stock.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/stock/stock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/stock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/stockController.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/server/users.js" afterPath="$PROJECT_DIR$/server/publish.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collections.js" afterPath="$PROJECT_DIR$/lib/collections.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/dashboard/dashboard.html" afterPath="$PROJECT_DIR$/client/dashboard/dashboard.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/layout/layout.css" afterPath="$PROJECT_DIR$/client/layout/layout.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/release" afterPath="$PROJECT_DIR$/.meteor/release" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/router.js" afterPath="$PROJECT_DIR$/lib/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/sidebar/sidebar.html" afterPath="$PROJECT_DIR$/client/sidebar/sidebar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pt-ge.iws" />
@@ -469,13 +451,20 @@
       <option name="project" value="LOCAL" />
       <updated>1418155446140</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- make stok&#10;- update meteor 1.0.1&#10;- minor update">
+      <created>1418208797337</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1418208797337</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -492,7 +481,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -516,7 +504,8 @@
     </option>
     <MESSAGE value="make user auth" />
     <MESSAGE value="- add zimme:iron-router-active &#10;- make sidebar&#10;- update" />
-    <option name="LAST_COMMIT_MESSAGE" value="- add zimme:iron-router-active &#10;- make sidebar&#10;- update" />
+    <MESSAGE value="- make stok&#10;- update meteor 1.0.1&#10;- minor update" />
+    <option name="LAST_COMMIT_MESSAGE" value="- make stok&#10;- update meteor 1.0.1&#10;- minor update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
