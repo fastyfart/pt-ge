@@ -1,0 +1,65 @@
+<template name="stock">
+    {{>modalAdd}}
+    <div class="row" id="drop">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 " id="page-title">
+                	<div class="well">
+                        <h4>{{title}}</h4>
+                    </div>
+                </div>
+
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 " id="page-options">
+                    <div class="well">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                Tambah <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li>
+                                    <a href="#" class="addModal" id="bahanMentah">Bahan Mentah</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="addModal" id="bahanOlah">Bahan Olah</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="addModal" id="bahanJadi">Bahan Jadi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>bahan}}
+
+</template>
+
+
+<template name="modalAdd" >
+    <div class="modal fade" id="modalAdd">
+    	<div class="modal-dialog modal-sm">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    				<h4 class="modal-title">Tambah data bahan</h4>
+    			</div>
+    			<div class="modal-body">
+    				<form class="form-horizontal" >
+                        <input type="text" id="name" class="form-control" placeholder="Nama Bahan">
+                        <br />
+                        <input type="text" id="unit" class="form-control" placeholder="Satuan">
+                        <br />
+                        <input type="text" id="stock" class="form-control" placeholder="Stock Awal">
+    				</form>
+    			</div>
+    			<div class="modal-footer">
+    				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    				<button type="button" class="btn btn-primary" id="save">Save changes</button>
+    			</div>
+    		</div><!-- /.modal-content -->
+    	</div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</template>

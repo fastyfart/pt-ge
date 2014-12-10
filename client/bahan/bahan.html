@@ -1,0 +1,83 @@
+<template name="bahan" >
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 well">
+            <div class="row">
+                {{>bahanMentah}}
+                {{>bahanOlah}}
+                {{>bahanJadi}}
+            </div>
+        </div>
+    </div>
+</template>
+
+<template name="bahanMentah">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <h4 class="text-muted">Bahan Mentah</h4>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <td>Bahan</td>
+                    <td>Stok</td>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each listBahanMentah}}
+                    {{#each lists}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{qty}} {{unit}}</td>
+                    </tr>
+                    {{/each}}
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>
+
+<template name="bahanOlah">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <h4 class="text-muted">Bahan Olah</h4>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <td>Bahan</td>
+                <td>Stok</td>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each listBahanOlah}}
+                {{#each lists}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{qty}} {{unit}}</td>
+                    </tr>
+                {{/each}}
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>
+
+<template name="bahanJadi">
+    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+        <h4 class="text-muted">Bahan Jadi</h4>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <td>Bahan</td>
+                <td>Stok</td>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each listBahanJadi}}
+                {{#each lists}}
+                    <tr>
+                        <td>{{name}}</td>
+                        <td>{{qty}} {{unit}}</td>
+                    </tr>
+                {{/each}}
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>

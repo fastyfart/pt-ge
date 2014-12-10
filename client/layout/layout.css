@@ -14,3 +14,7 @@ body{
     /* inline-block space fix */
     margin-right:-4px;
 }
+
+#drop{
+    margin-top: -10px;
+}
