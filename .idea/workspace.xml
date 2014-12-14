@@ -2,28 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="332b5f76-2119-4e38-ba49-ea1d469ac80b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/order/order.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/order/order.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/order/order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/orderController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/partner/partner.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/partner.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/production/production.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/production/production.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/productionController.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/request/request.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/request/request.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/request.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/controllers/requestController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collections.js" afterPath="$PROJECT_DIR$/lib/collections.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/head.html" afterPath="$PROJECT_DIR$/client/head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/layout/layout.html" afterPath="$PROJECT_DIR$/client/layout/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/navbar/navbar.css" afterPath="$PROJECT_DIR$/client/navbar/navbar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/partner/partner.html" afterPath="$PROJECT_DIR$/client/partner/partner.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publish.js" afterPath="$PROJECT_DIR$/server/publish.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/router.js" afterPath="$PROJECT_DIR$/lib/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/sidebar/sidebar.html" afterPath="$PROJECT_DIR$/client/sidebar/sidebar.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="pt-ge.iws" />
@@ -446,13 +424,20 @@
       <option name="project" value="LOCAL" />
       <updated>1418208797337</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="- make production">
+      <created>1418574398159</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1418574398159</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="27" width="1368" height="742" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -469,7 +454,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -494,7 +478,8 @@
     <MESSAGE value="make user auth" />
     <MESSAGE value="- add zimme:iron-router-active &#10;- make sidebar&#10;- update" />
     <MESSAGE value="- make stok&#10;- update meteor 1.0.1&#10;- minor update" />
-    <option name="LAST_COMMIT_MESSAGE" value="- make stok&#10;- update meteor 1.0.1&#10;- minor update" />
+    <MESSAGE value="- make production" />
+    <option name="LAST_COMMIT_MESSAGE" value="- make production" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -715,6 +700,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="209">
           <caret line="2" column="37" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -722,6 +708,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="437">
           <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#40#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -753,6 +742,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="397" max-vertical-offset="988">
           <caret line="44" column="8" selection-start-line="44" selection-start-column="8" selection-end-line="44" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -767,6 +757,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2571912" vertical-offset="0" max-vertical-offset="798">
           <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
