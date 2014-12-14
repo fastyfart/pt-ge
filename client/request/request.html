@@ -1,0 +1,90 @@
+<template name="request">
+    <div class="row" id="drop">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="row">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 " id="page-title">
+                    <div class="well">
+                        <h4>{{title}}</h4>
+                    </div>
+                </div>
+
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 " id="page-options">
+                    <div class="well">
+                        <div class="btn-group">
+                            <button type="button" id="add" class="btn btn-primary">
+                                Tambah
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" pageSlide ">
+        <div class="inner">
+            <div class="row">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">Konsumen</label>
+                        <div class="col-sm-6" >
+                            <select class="form-control" id="customer">
+                                {{#each listCustomer}}
+                                    <option value="{{name}}">{{name}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">Produk</label>
+                        <div class="col-sm-6" >
+                            <select class="form-control" id="product">
+                                {{#each listProduct }}
+                                    <option value="{{name}}">{{name}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4">Kuantiti</label>
+                        <div class="col-sm-4" >
+                            <input class="form-control" id="qty">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-6 col-sm-offset-4" >
+                            <button type="button" id="save" class="btn btn-primary pull-right">Simpan</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    {{>listRequest}}
+</template>
+
+<template name="listRequest">
+    <div class="row">
+    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 well">
+    		<table class="table table-striped" >
+                <thead>
+                    <tr>
+                        <th>Tanggal</th>
+                        <th>Konsumen</th>
+                        <th>Produk</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each listRequest}}
+                        <tr>
+                            <td>{{tanggal created}}</td>
+                            <td>{{customer}}</td>
+                            <td>{{product}}, {{qty}}</td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+    		</table>
+    	</div>
+    </div>
+</template>

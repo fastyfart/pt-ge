@@ -1,4 +1,5 @@
 <template name="partner">
+    {{>modalAddPartner}}
     <div class="row" id="drop">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
             <div class="row">
@@ -16,10 +17,10 @@
                             </button>
                             <ul class="dropdown-menu" role="menu">
                                 <li>
-                                    <a href="#" class="addModal" id="bahanMentah">Supplier</a>
+                                    <a href="#" class="addModal" id="suppliers">Supplier</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="addModal" id="bahanOlah">Customer</a>
+                                    <a href="#" class="addModal" id="customers">Customer</a>
                                 </li>
                             </ul>
                         </div>
@@ -28,4 +29,89 @@
             </div>
         </div>
     </div>
+
+    <div class="row">
+    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 well">
+    		{{>listCustomers}}
+    		{{>listSuppliers}}
+    	</div>
+    </div>
+</template>
+
+<template name="listCustomers" >
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Pelanggan</th>
+                    <th>Info</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each listCustomers}}
+                    {{#each lists}}
+                        <tr>
+                            <td>
+                                {{name}}
+                            </td>
+                            <td>
+                                {{phone}}, {{address}}
+                            </td>
+                        </tr>
+                    {{/each}}
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>
+
+<template name="listSuppliers" >
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Suppliers</th>
+                <th>Info</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each listSuppliers}}
+                {{#each lists}}
+                    <tr>
+                        <td>
+                            {{name}}
+                        </td>
+                        <td>
+                            {{phone}}, {{address}}
+                        </td>
+                    </tr>
+                {{/each}}
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>
+
+<template name="modalAddPartner" >
+    <div class="modal fade" id="modalAddPartner">
+    	<div class="modal-dialog modal-sm">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    				<h4 class="modal-title">Tambah data partner</h4>
+    			</div>
+    			<div class="modal-body">
+    				<form class="form-horizontal">
+                        <input type="text" id="name" class="form-control" placeholder="Nama"><br />
+                        <input type="text" id="address" class="form-control" placeholder="Alamat"><br />
+                        <input type="text" id="phone" class="form-control" placeholder="Telepon">
+    				</form>
+    			</div>
+    			<div class="modal-footer">
+    				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    				<button type="button" class="btn btn-primary" id="save">Simpan</button>
+    			</div>
+    		</div><!-- /.modal-content -->
+    	</div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 </template>

@@ -1,0 +1,36 @@
+
+
+.pageSlide {
+    top: -25px;
+    overflow-y: hidden;
+    max-height: 0px; /* approximate max height */
+    height: 500px;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(1, 1, 1, 1);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    text-align: center;
+    z-index: 1;
+    width: 1000px;
+}
+
+.pageSlide>.inner{
+    margin-right: auto;
+    margin-left: auto;
+    padding:30px;
+    width: 500px;
+    background-color: #37bc9b;
+    box-shadow: 0px 5px 30px black;
+}
+
+.pageSlide.closed {
+    max-height: 0;
+}
+
+.pageSlide.open {
+    max-height: 500px;
+}
+
