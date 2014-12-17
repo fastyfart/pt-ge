@@ -4,7 +4,9 @@
 
 Meteor.methods({
     'makeProduction' : function(bahan, col){
-        console.log(bahan);
         Stock.update({bahan : bahan}, { $push : {production : col}});
+    },
+    'updateQtyStock' : function(nameBahan, inc){
+        Stock.update({'lists.name' : nameBahan}, {$inc : {'lists.$.qty' : -inc }});
     }
 });

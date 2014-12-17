@@ -22,7 +22,7 @@ Template.modalAdd.events({
         var list = {
             name : name,
             unit : unit,
-            qty : stock
+            qty : parseInt(stock)
         };
 
         Meteor.call('updateBahan', bahan, list, function (err) {

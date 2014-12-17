@@ -35,15 +35,16 @@ Template.makeProduction.events({
    'click #save' : function(e,t){
         var bahan = Session.get('trackBahan');
 
-        //var prod = [];
         var prodList = [];
-        //prod.push({_id : new Mongo.ObjectID});
-        $('.qty').each(function(){
 
-            prodList.push({
-                name : $(this).attr('id'),
-                qty : $(this).val()
-            });
+        $('.qty').each(function(){
+            var qty = parseInt($(this).val());
+            if( qty > 0){
+                prodList.push({
+                    name : $(this).attr('id'),
+                    qty : qty
+                });
+            }
         });
 
         var prod = {
@@ -53,9 +54,16 @@ Template.makeProduction.events({
         };
 
         Meteor.call('makeProduction', bahan, prod, function(err){
-            console.log(err);
+            if(!err){
+                prodList.forEach(function(val){
+                    Meteor.call('updateQtyStock', val.name, val.qty);
+                });
+                $('#modalMakeProduction').modal('hide');
+                toastr.success('data telah disimpan');
+            }else{
+                toastr.error('Error...');
+            }
         });
-        console.log(prod);
 
    }
 });
@@ -72,7 +80,7 @@ Template.productionBahanMentah.helpers({
     listBahan : function(){
         var bahan = Session.get('trackBahan');
         var stock = Stock.findOne({bahan : bahan});
-        console.log(stock.production);
+
         return stock.production;
     },
     tanggal : function(date) {
@@ -87,7 +95,7 @@ Template.productionBahanOlah.helpers({
     listBahan : function(){
         var bahan = Session.get('trackBahan');
         var stock = Stock.findOne({bahan : bahan});
-        console.log(stock.production);
+
         return stock.production;
     },
     tanggal : function(date) {
@@ -102,7 +110,7 @@ Template.productionBahanJadi.helpers({
     listBahan : function(){
         var bahan = Session.get('trackBahan');
         var stock = Stock.findOne({bahan : bahan});
-        console.log(stock.production);
+
         return stock.production;
     },
     tanggal : function(date) {
